@@ -2,3 +2,15 @@ body {
     background-color: lavenderblush;
 }
 
+.loading-bar {
+    width: 100%;
+    background-color: bisque;
+    height: 30px;
+}
+
+.bar {
+    width: 0%;
+    height: 100%;
+    background-color: aqua;
+    transition: width 0.3s ease;
+}
