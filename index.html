@@ -10,7 +10,16 @@
 <p>Enter a number and watch the magic happen!</p>
 
 <input type="textbox" name="inputNumber" id="inputNumber" placeholder="Your number...">
+<button onclick="showNumber()">Click me</button>
 
+<p id="test"></p>
 
 </body>
 </html>
+
+<script>
+    function showNumber() {
+        var x = document.getElementById("inputNumber");
+        document.getElementById("test").innerText = x.value;
+    }
+</script>
