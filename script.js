@@ -43,7 +43,15 @@ function showNumber() {
         loadingText.style.display = 'none';
     }, 4000)
     
+    // show number
+    var numberDisplay = document.getElementById("numberDisplay");
 
-    document.getElementById("numberDisplay").innerText = inputNumber.value;
+    setTimeout(() => {
+        numberDisplay.innerText = "I've got it! Your number is..";
+    }, 4000)
+
+    setTimeout(() => {
+        numberDisplay.innerText = inputNumber.value;
+    }, 5000)
 
 }
