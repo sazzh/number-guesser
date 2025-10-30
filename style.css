@@ -28,7 +28,34 @@ body {
     animation: spin 1s linear infinite;
 }
 
+/* spin animation for loading circle */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-} 
+}
+
+.loading-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 1s steps(12) infinite alternate, blink 800ms steps(12) infinite normal;
+    border-right: 2px solid black;
+}
+
+/* typewriter animation for loading text */
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
+}

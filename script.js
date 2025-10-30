@@ -5,6 +5,10 @@ function showNumber() {
     inputNumber.style.display = 'none';
     document.getElementById("guessBtn").style.display = 'none';
 
+    // show loading text
+    var loadingText = document.getElementById("loadingText");
+    loadingText.style.display = 'block';
+
     // run loading bar
     const loadingBar = document.getElementById("loadingBar");
     const bar = document.getElementById("bar");
@@ -33,9 +37,10 @@ function showNumber() {
         loadingCircle.style.display = 'block';
     }, 2000)
 
-    // hide loading circle again
+    // hide loading circle and thinking text again
     setTimeout(() => {
         loadingCircle.style.display = 'none';
+        loadingText.style.display = 'none';
     }, 4000)
     
 
