@@ -72,7 +72,7 @@ button:hover {
 .loading-text {
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 1s steps(12) infinite alternate, blink 800ms steps(12) infinite normal;
+    animation: typewriter 1s steps(13) infinite alternate, blink 800ms steps(13) infinite normal;
     border-right: 2px solid black;
 }
 

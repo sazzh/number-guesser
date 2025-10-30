@@ -45,18 +45,20 @@ function showNumber() {
     
     // show number
     var numberDisplay = document.getElementById("numberDisplay");
+    var numberReveal = document.getElementById("numberReveal");
 
     setTimeout(() => {
         numberDisplay.innerText = "I've got it!";
+        numberReveal.style.display = 'block';
     }, 4000)
 
     setTimeout(() => {
-        document.getElementById("numberReveal").style.display = 'block';
-        numberDisplay.innerText = inputNumber.value;
+        numberReveal.innerText += " " + inputNumber.value;
     }, 5500)
 
 }
 
+// refresh page 
 function resetSystem() {
     window.location.reload();
     return false;
