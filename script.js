@@ -47,11 +47,12 @@ function showNumber() {
     var numberDisplay = document.getElementById("numberDisplay");
 
     setTimeout(() => {
-        numberDisplay.innerText = "I've got it! Your number is..";
+        numberDisplay.innerText = "I've got it!";
     }, 4000)
 
     setTimeout(() => {
+        document.getElementById("numberReveal").style.display = 'block';
         numberDisplay.innerText = inputNumber.value;
-    }, 5000)
+    }, 5500)
 
 }
