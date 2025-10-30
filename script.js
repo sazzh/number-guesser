@@ -3,7 +3,7 @@ function showNumber() {
     document.getElementById("numberDisplay").innerText = x.value;
 
     // run loading bar
-    const loadingBar = document.getElementById("loadingBar");
+    const bar = document.getElementById("bar");
     var width = 1;
     var id = setInterval(frame, 15);
 
@@ -12,7 +12,7 @@ function showNumber() {
             clearInterval(id);
         } else {
             width++;
-            loadingBar.style.width = width + '%';
+            bar.style.width = width + '%';
         }
     }
 }

@@ -1,3 +1,7 @@
+:root {
+    --loading-colour: aqua;
+}
+
 body {
     background-color: lavenderblush;
 }
@@ -11,6 +15,6 @@ body {
 .bar {
     width: 0%;
     height: 100%;
-    background-color: aqua;
+    background-color: var(--loading-colour);
     transition: width 0.3s ease;
 }
