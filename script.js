@@ -56,3 +56,8 @@ function showNumber() {
     }, 5500)
 
 }
+
+function resetSystem() {
+    window.location.reload();
+    return false;
+}
